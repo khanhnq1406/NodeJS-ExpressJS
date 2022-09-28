@@ -4,12 +4,17 @@ const morgan = require('morgan');
 const { engine } = require('express-handlebars');
 const app = express();
 const port = 3000;
-
 //Process static file (add image)
 app.use(express.static(path.join(__dirname, 'public')));
 
 //HTTP logger
 // app.use(morgan('combined'));
+
+//use midleware to get data
+app.use(express.urlencoded({
+  extended: true
+}));
+app.use(express.json());
 
 //Template engine
 app.engine('hbs', engine({
@@ -30,6 +35,11 @@ app.get('/news', (req, res) => {
 app.get('/search', (req, res) => {
   // console.log(req.query.q); //Get query parameter
   res.render('search');
+})
+
+app.post('/search', (req, res) => {
+  console.log(req.body); //Get query parameter
+  res.send('');
 })
 
 app.listen(port, () => {
