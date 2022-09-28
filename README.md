@@ -8,3 +8,7 @@
 - node-sass
 - morgan (logger)
 - bootstrap
+- Basic routing
+
+*Query parameters*
+`[url]?[param1]=[value1]&[param2]=[value2]&[param3]=[value3]`
