@@ -23,11 +23,12 @@ app.get('/', (req, res) => {
 })
 
 app.get('/news', (req, res) => {
+  console.log(req.query.q); //Get query parameter
   res.render('news');
 })
 
 app.get('/search', (req, res) => {
-  console.log(req.query.q); //Get query parameter
+  // console.log(req.query.q); //Get query parameter
   res.render('search');
 })
 

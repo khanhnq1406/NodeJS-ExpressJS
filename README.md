@@ -12,3 +12,6 @@
 
 *Query parameters*
 `[url]?[param1]=[value1]&[param2]=[value2]&[param3]=[value3]`
+
+*Form default behavior*
+- When press button to submit form, get value of `name=` send to url with query parameter
