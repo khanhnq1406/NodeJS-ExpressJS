@@ -10,7 +10,8 @@
 - bootstrap
 - Basic routing
 - body-parses
-
+- mongoose
+- async function
 ## Query parameters
 ```
 [url]?[param1]=[value1]&[param2]=[value2]&[param3]=[value3]
