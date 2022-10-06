@@ -12,6 +12,7 @@
 - body-parses
 - mongoose
 - async function
+- GET, POST, PUT, PATCH, DELETE, OPTIOS, HEAD
 ## Query parameters
 ```
 [url]?[param1]=[value1]&[param2]=[value2]&[param3]=[value3]
